@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="../base.css">
+    <style>
+        a { color: black;
+        }
+        a:hover {
+            color: greenyellow;
+            background-color: black;
+        }
+        li {
+            list-style-type: none;
+            text-align:left;
+            padding: 16px;            
+        }
+        p {
+            font-size: 20px;
+        }
+        label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="../page.html" title="Clique para ir à página principal">Página principal</a></li><br><br><br>
+                <li><a href="sobre.html" title="Clique para saber sobre a clínica">Sobre</a></li><br><br><br>
+                <li><a href="horario.html" title="Clique para saber o horário de funcionamento">Horário de atendimento</a></li><br><br><br>
+                <li><a href="contato.html" title="Clique para saber como contatar-nos">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main" id="contato">
+            <div class="header">
+                <img src="../img/headercontato.jpg" style="width: 100%; height: 150px;" alt="imagem da clínica" title="Imagem da clínica" >
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <fieldset><legend style="font-size: 20px;">Contate-nos</legend>
+                <table style="padding: 16px;" cellpading="15" cellspacing="15" margin="2">
+                <tr>
+                <td>
+                <p>Rua da imaginação, n°123. Bairro jardins dourados </p>
+                <p>Telefone: (11) 3315 - 9881</p>
+                <p>WhatsApp: (11) 99156 - 2651</p>
+                <p>E-mail: clinicaestetics@gmail.com</p>
+                </td>
+                <td>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.5881238174177!2d-46.33897892414035!3d-23.951592405918593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce036ed41d49c5%3A0x41de152744278201!2sR.%20Dom%20Pedro%20I%2C%2017%20-%20Vila%20Belmiro%2C%20Santos%20-%20SP%2C%2011075-550!5e0!3m2!1spt-BR!2sbr!4v1706051914817!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td></tr></table>
+            </fieldset>
+            <fieldset><legend style="font-size: 20px;">Nos envie uma mensagem</legend>
+                <form>
+                <label>Nome: </label><br><input name="nome" type="text"><br>
+                <label>E-mail: </label><br><input name="email" type="email"><br>
+                <label>Assunto: </label><br><select name="assunto">
+                    <option value=""> Selecione o assunto:</option>
+                    <option value="duvida">Dúvidas</option>
+                    <option value="agendamento">Agendamento</option>
+                    <option value="outros">Outros assuntos</option>
+                    </select> <br>
+                <Label>Mensagem: </Label><br><textarea name="menssagem" rows="15" cols="100"></textarea><br>
+                <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+                </form>
+                </fieldset>
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+    
+            <div class="footer">
+                <p>Rua da imaginação, n°123. Bairro jardins dourados </p>
+                <p>Telefone: (11) 3315 - 9881</p>
+                <p>WhatsApp: (11) 99156 - 2651</p>
+                <p>E-mail: clinicaestetics@gmail.com</p>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
